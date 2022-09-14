@@ -1,0 +1,107 @@
+format = """
+[](164)\
+$hostname\
+[](bg:127 fg:164)\
+$username\
+[](bg:164 fg:127)\
+$directory\
+[](fg:164 bg:129)\
+$git_branch\
+$git_status\
+[](fg:129 bg:93)\
+$nodejs\
+$golang\
+$java\
+$kotlin\
+$rust\
+$python\
+[](fg:93 bg:57)$cmd_duration\
+[ ](fg:57)
+$character
+"""
+
+# Disable the blank line at the start of the prompt
+#add_newline = false
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[❯](225)"
+error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "bg:127"
+style_root = "bg:127"
+format = '[$user ](fg:231 $style)'
+
+[directory]
+style = "fg:231 bg:164"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+[hostname]
+style = "fg:231 bg:164"
+format = "[$ssh_symbol$hostname]($style)"
+
+[cmd_duration]
+min_time = 500
+style = "fg:231 bg:57"
+format = '[  $duration ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:129"
+format = '[[ $symbol $branch ](fg:231 bg:129)]($style)'
+
+[git_status]
+style = "bg:129"
+format = '[[($all_status$ahead_behind )](fg:231 dimmed bg:129)]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:231 bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+
+[kotlin]
+symbol = "🅺"
+style = "bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+
+[java]
+symbol = ""
+style = "bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+
+[python]
+symbol = ""
+style = "bg:93"
+format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
+

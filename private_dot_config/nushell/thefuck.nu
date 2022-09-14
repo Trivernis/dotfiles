@@ -1,0 +1,1 @@
+alias fuck = $"(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 thefuck $'(history | last 1)' | save /tmp/fuck.nu; nu /tmp/fuck.nu)"

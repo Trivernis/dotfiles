@@ -1,0 +1,73 @@
+# The following lines were added by compinstall
+
+export PATH=/home/trivernis/.local/bin:/home/trivernis/.nvm/versions/node/v16.13.2/bin:/home/trivernis/.local/share/gem/ruby/2.7.0/bin:/home/trivernis/.cargo/bin:/home/trivernis/.deno/bin:$PATH
+export LC_ALL="en_GB.UTF-8"
+export GISTIT_TOKEN="9be3630eaced4ec7d17232c71a8b932a6863123d"
+export SSH_ASKPASS=/usr/bin/ksshaskpass
+
+zstyle ':completion:*' completer _complete _ignored _approximate
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}'
+zstyle :compinstall filename '/home/trivernis/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+setopt autocd
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# aliases
+source ~/.local/share/zsh/aliases.zsh
+
+# antigen
+
+
+
+source ~/.local/share/zsh/antigen.zsh
+antigen use oh-my-zsh
+
+#antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle lukechilds/zsh-nvm
+
+
+antigen apply
+
+# antigen end
+
+# aliases
+alias ls=exa
+alias vim=hx
+alias zellidev="zellij --layout ~/.config/zellij/development.toml"
+
+# rvm
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+# rvm end
+
+# config
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_USE_ASYNC="true, lol"
+
+# config end
+
+eval "$(starship init zsh)"
+#eval "$(jump shell)"
+eval $(thefuck --alias)
+eval "$(zoxide init zsh --cmd cd)"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+
+# Load Angular CLI autocompletion.
+#source <(ng completion script)

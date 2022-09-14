@@ -1,0 +1,31 @@
+theme = "dracula-purple"
+
+[editor]
+rulers = [120]
+shell = ["zsh", "-c"]
+true-color = true
+cursorline = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "position-percentage", "separator", "file-encoding", "file-line-ending", "file-type"]
+separator = " │"
+
+[editor.explorer]
+style = "tree"
+position = "embed"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+C-j = "half_page_down"
+C-k = "half_page_up"

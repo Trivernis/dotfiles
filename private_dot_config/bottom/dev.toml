@@ -1,0 +1,10 @@
+[flags]
+hide_avg_cpu = true
+
+[[row]]
+  [[row.child]]
+    ratio = 5
+    type="cpu"
+  [[row.child]]
+    ratio=3
+    type="mem"
