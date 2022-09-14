@@ -1,0 +1,25 @@
+window:
+  startup_mode: Maximized
+  
+font:
+  normal:
+    family: 'Fira Code Nerd Font Mono'
+    
+colors:
+  primary:
+    background: '#100019'
+  normal:
+    yellow: '#ffff7f'
+    white: '#ffefef'
+    magenta: '#ff3eff'
+    red: '#ff5555'
+  
+  bright:
+    yellow: '#ffff7f'
+    red: '#ff5555'
+    magenta: '#ff3eff'
+    white: '#ffffff'
+    blue: '#63bbfd'
+    cyan: '#49fdfd'
+    green: '#50fa7b'
+      
