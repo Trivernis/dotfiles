@@ -24,3 +24,5 @@ colors:
     cyan: '#49fdfd'
     green: '#50fa7b'
       
+shell:
+  program: /bin/nu

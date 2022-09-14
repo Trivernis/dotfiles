@@ -163,7 +163,7 @@ let dark_theme = {
     shape_external: cyan
     shape_externalarg: green_bold
     shape_literal: blue
-    shape_operator: yellow
+    shape_operator: light_magenta
     shape_signature: green_bold
     shape_string: green
     shape_string_interpolation: cyan_bold
@@ -177,7 +177,7 @@ let dark_theme = {
     shape_variable: purple
     shape_flag: blue_bold
     shape_custom: green
-    shape_nothing: light_cyan
+    shape_nothing: light_magenta
 }
 
 let light_theme = {
@@ -272,7 +272,7 @@ let-env config = {
     # A suffix which will be used with 'truncating' methodology
     # truncating_suffix: "..."
   }
-  show_banner: true # true or false to enable or disable the banner
+  show_banner: false # true or false to enable or disable the banner
   show_clickable_links_in_ls: true # true or false to enable or disable clickable links in the ls listing. your terminal has to support links.
 
   hooks: {
@@ -525,3 +525,6 @@ source ~/.config/nushell/thefuck.nu
 
 # aliases
 source ~/.config/nushell/aliases.nu
+
+# motd
+source ~/.config/nushell/motd.nu
