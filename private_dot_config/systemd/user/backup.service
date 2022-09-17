@@ -1,0 +1,6 @@
+[Unit]
+Description=Does a backup
+
+[Service]
+ExecStart=nu %h/.local/share/scripts/backup.nu
+
