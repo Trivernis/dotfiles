@@ -511,6 +511,9 @@ let-env config = {
   ]
 }
 
+# Completions
+source ~/.config/nushell/completions/completions.nu
+
 # Environment
 source ~/.config/nushell/path.nu
 
