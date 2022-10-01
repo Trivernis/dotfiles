@@ -27,7 +27,7 @@ tabs:
         split_size:
           Percent: 60
         run:
-          command: {cmd: zsh, args: ["-c", "sleep 1; hx"]}
+          command: {cmd: zsh, args: ["-c", "sleep 1; hx --show-explorer"]}
       - direction: Horizontal
         split_size:
           Percent: 40
