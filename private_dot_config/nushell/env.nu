@@ -59,5 +59,6 @@ let-env NU_PLUGIN_DIRS = [
 ]
 
 let-env EDITOR = "hx"
+let-env SSH_AUTH_SOCK = $"($env.XDG_RUNTIME_DIR)/ssh-agent.socket"
 # :$PATH# To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')

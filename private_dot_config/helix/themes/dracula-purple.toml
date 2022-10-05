@@ -65,6 +65,8 @@
 "ui.explorer.focus" = { modifiers = ["reversed"] }
 "ui.explorer.unfocus" = { bg = "comment" }
 
+rainbow = ["#7c5ea3", "#9c5b95",  "#9c5e80", "#6b4466"]
+
 [palette]
 background = "#3A2A4D"
 background_dark = "#2B1C3D"
