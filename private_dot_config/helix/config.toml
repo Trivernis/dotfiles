@@ -30,4 +30,4 @@ rainbow = true
 [keys.normal]
 C-j = "half_page_down"
 C-k = "half_page_up"
-a = ["insert_mode", "move_char_right"]
+# a = ["insert_mode", "move_char_right"]
