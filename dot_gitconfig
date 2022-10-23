@@ -1,0 +1,51 @@
+[user]
+	email = trivernis@protonmail.com
+	name = trivernis
+	signingkey = Trivernis@protonmail.com
+[credential "https://git.trivernis.net"]
+	username = Trivernis
+[credential "https://github.com"]
+	username = Trivernis
+[credential]
+	helper = store
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[alias]
+	c = commit -s
+	commit = commit -s
+[core]
+	editor = hx
+	pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+[add.interactive]
+    useBuiltin = false # required for git 2.37.0
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+
+[merge]
+    conflictstyle = diff3
+	tool = vimdiff
+
+[diff]
+    colorMoved = default
+	rebase = false
+
+[init]
+	defaultBranch = main
+[mergetool]
+	prompt = false
+[pull]
+	rebase = false
+[gpg]
+	program = /home/trivernis/.local/share/scripts/gpg-pinentry-loopback.bash
