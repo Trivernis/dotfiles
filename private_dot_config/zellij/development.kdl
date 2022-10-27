@@ -1,0 +1,27 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab split_direction="Vertical" {
+        pane split_direction="Vertical" {
+            pane command="zsh" size="60%" {
+                args "-c" "sleep 1; hx --show-explorer; nu"
+            }
+            pane size="40%" split_direction="Horizontal" {
+                pane command="btm" size="20%" borderless=true {
+                    args "--config" "/home/trivernis/.config/bottom/dev.toml"
+                }
+                pane size="80%"
+            }
+        }
+    }
+}
+scroll_buffer_size 10000
+copy_command "wl-copy"
+
