@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-gpg --pinentry-mode loopback $@
+until gpg --pinentry-mode loopback $@ || (( count >= 5 )); do echo "Try again!"; done

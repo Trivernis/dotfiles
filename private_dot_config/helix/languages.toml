@@ -16,5 +16,3 @@ source = { git = "https://github.com/trivernis/tree-sitter-xml", rev = "3ef1d1a9
 [[language]]
 name = "rust"
 
-[language.config]
-cargo = { features = "all" }

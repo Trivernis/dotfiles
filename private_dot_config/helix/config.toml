@@ -25,7 +25,7 @@ position = "embed"
 
 [editor.indent-guides]
 render = true
-rainbow = true
+rainbow = "dim"
 
 [keys.normal]
 C-j = "half_page_down"
