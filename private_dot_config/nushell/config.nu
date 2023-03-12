@@ -239,6 +239,11 @@ let light_theme = {
 
 # The default config record. This is where much of your global configuration is setup.
 let-env config = {
+  cursor_shape: {
+    vi_insert: underscore
+    vi_normal: block
+    emacs: block
+  }
   use_grid_icons: true
   color_config: $dark_theme   # if you want a light theme, replace `$dark_theme` to `$light_theme`
   footer_mode: "25" # always, never, number_of_rows, auto
