@@ -1,1 +1,2 @@
-source podman.nu
+use ./podman.nu
+use ./git.nu
