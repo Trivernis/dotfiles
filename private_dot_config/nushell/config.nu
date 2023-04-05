@@ -178,10 +178,10 @@ let-env config = {
   show_banner: false # true or false to enable or disable the banner
 
   hooks: {
-    pre_prompt: [{
+    pre_prompt: [{||
       $nothing  # replace with source code to run before the prompt is shown
     }]
-    pre_execution: [{
+    pre_execution: [{||
       $nothing  # replace with source code to run before the repl input is run
     }]
     env_change: {

@@ -1,9 +1,9 @@
 def all_container_names [] {
-  podman container ls --all --format json | from json | get Names | each { get 0 }
+  podman container ls --all --format json | from json | get Names | each {|| get 0 }
 }
 
 def running_container_names [] {
-  podman container ls --format json | from json | get Names | each { get 0 }
+  podman container ls --format json | from json | get Names | each {|| get 0 }
 }
 
 export extern "podman start" [

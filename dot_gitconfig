@@ -49,3 +49,5 @@
 	rebase = false
 [gpg]
 	program = /home/trivernis/.local/share/scripts/gpg-pinentry-loopback.bash
+[push]
+	autoSetupRemote = true
