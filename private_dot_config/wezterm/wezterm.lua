@@ -11,6 +11,42 @@ config.font = wezterm.font_with_fallback {
 }
 config.font_size = 10
 config.color_scheme = 'Dracula'
+config.window_background_gradient = {
+    orientation = 'Vertical',
+    colors = {
+      '#230022',
+      '#1A002A',
+    },
+}
+config.window_frame = {
+    active_titlebar_bg = '#1A002A',
+    inactive_titlebar_bg = '#1A002A',
+}
+config.colors = {
+  tab_bar = {
+    active_tab = {
+      bg_color = '#4383a7',
+      fg_color = '#FFFFFF',
+    },
+    inactive_tab = {
+      bg_color = '#46007c',
+      fg_color = '#FFFFFF',
+    },
+    inactive_tab_hover = {
+      bg_color = '#58008f',
+      fg_color = '#FFFFFF',
+    },
+    new_tab = {
+      bg_color = '#46007c',
+      fg_color = '#FFFFFF',
+    },
+    new_tab_hover = {
+      bg_color = '#57008f',
+      fg_color = '#FFFFFF',
+    },
+  }
+}
+
 
 -- keybinds, mostly inspired by konsole
 config.keys = {
