@@ -15,12 +15,14 @@ select = "underline"
 
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name"]
+left = ["mode", "spinner", "spacer", "file-type-icon", "file-name"]
 center = []
-right = ["diagnostics", "selections", "position", "position-percentage", "separator", "file-encoding", "file-line-ending", "file-type"]
+right = ["diagnostics", "selections", "position", "position-percentage", "separator", "file-encoding", "file-line-ending", "file-type", "separator", "spacer", "version-control", "spacer"]
 separator = " │"
 
-[editor.explorer]
+[editor.lsp]
+auto-signature-help = true
+display-inlay-hints = true
 
 [editor.indent-guides]
 render = true

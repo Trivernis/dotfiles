@@ -40,6 +40,7 @@
 "ui.window" = { fg = "foreground" }
 "ui.virtual.ruler" = { bg = "ruler" }
 "ui.virtual.indent-guide" = { fg = "ruler" }
+"ui.virtual" = { fg = "hint" }
 
 "ui.statusline" = { fg = "foreground", bg = "background_dark" }
 "ui.statusline.inactive" = { fg = "comment", bg = "background_dark" }
@@ -73,6 +74,7 @@ background_dark = "#2B1C3D"
 foreground = "#f8f8f2"
 ruler = "#453254"
 comment = "#886C9C"
+hint = "#8a56b0"
 red = "#ff5555"
 orange = "#ffb86c"
 yellow = "#f1fa8c"
