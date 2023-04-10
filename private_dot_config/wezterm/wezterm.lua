@@ -3,6 +3,7 @@ local act = wezterm.action
 local config = {}
 
 config.enable_scroll_bar = true
+config.scrollback_lines = 12000
 config.font = wezterm.font_with_fallback {
   'Fira Code',
   'FiraCode NF',
@@ -74,7 +75,12 @@ config.keys = {
     key = 'w',
     mods = 'CTRL|SHIFT',
     action = act.ActivateTabRelative(-1)
-  }
+  },
+  {
+    key = 'n',
+    mods = 'CTRL',
+    action = act.SpawnWindow
+  },
 }
 
 if wezterm.target_triple == 'x86_64-pc-windows-msvc' then

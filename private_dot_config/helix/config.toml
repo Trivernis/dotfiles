@@ -1,4 +1,5 @@
 theme = "dracula-purple"
+icons = "nerdfonts"
 
 [editor]
 rulers = [120]
@@ -20,8 +21,6 @@ right = ["diagnostics", "selections", "position", "position-percentage", "separa
 separator = " │"
 
 [editor.explorer]
-style = "tree"
-position = "embed"
 
 [editor.indent-guides]
 render = true
@@ -30,4 +29,3 @@ rainbow = "dim"
 [keys.normal]
 C-j = "half_page_down"
 C-k = "half_page_up"
-# a = ["insert_mode", "move_char_right"]
