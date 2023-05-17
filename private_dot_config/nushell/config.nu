@@ -425,5 +425,8 @@ source ~/.config/nushell/starship.nu
 # aliases
 source ~/.config/nushell/aliases.nu
 
+# zoxide
+source ~/.config/nushell/zoxide.nu
+
 # motd
 source ~/.config/nushell/motd.nu
