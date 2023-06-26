@@ -64,7 +64,7 @@ format = "[$ssh_symbol$hostname]($style)"
 [cmd_duration]
 min_time = 500
 style = "fg:231 bg:57"
-format = '[  $duration ]($style)'
+format = '[ 󰥔 $duration ]($style)'
 
 [git_branch]
 symbol = ""
