@@ -425,9 +425,6 @@ source ~/.config/nushell/starship.nu
 # Zoxide
 source ~/.config/nushell/zoxide.nu
 
-# thefuck
-source ~/.config/nushell/thefuck.nu
-
 # aliases
 source ~/.config/nushell/aliases.nu
 
