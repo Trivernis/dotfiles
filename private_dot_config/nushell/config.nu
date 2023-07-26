@@ -111,7 +111,7 @@ let light_theme = {
 
 
 # The default config record. This is where much of your global configuration is setup.
-let-env config = {
+$env.config = {
   cursor_shape: {
     vi_insert: underscore
     vi_normal: block
@@ -421,9 +421,6 @@ source ~/.config/nushell/path.nu
 
 # Starship
 source ~/.config/nushell/starship.nu
-
-# Zoxide
-source ~/.config/nushell/zoxide.nu
 
 # aliases
 source ~/.config/nushell/aliases.nu
