@@ -1,6 +1,6 @@
 #!/bin/nu
-let-env BORG_REPO = '/run/media/trivernis/Backup'
-let BACKUP_PATHS = [	
+$env.BORG_REPO = '/run/media/trivernis/Backup'
+let BACKUP_PATHS = ([	
 	~/Documents 
 	~/Videos 
 	~/Pictures/ 
@@ -15,7 +15,7 @@ let BACKUP_PATHS = [
 	/mnt/Data/Audio/ 
 	/mnt/Massdata/ 
 	/etc
-]
+] | path expand )
 
 if (pgrep borg | length) > 0 {
   echo "Borg is running"

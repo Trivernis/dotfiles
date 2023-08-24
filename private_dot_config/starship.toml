@@ -47,7 +47,7 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-"Documents" = " "
+"Documents" = "󱔗 "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
@@ -86,7 +86,7 @@ style = "bg:93"
 format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
 
 [golang]
-symbol = ""
+symbol = ""
 style = "bg:93"
 format = '[[ $symbol ($version) ](fg:231 bg:93)]($style)'
 

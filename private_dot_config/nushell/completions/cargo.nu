@@ -18,7 +18,7 @@ export extern "cargo" [
   --frozen
   --locked
   --offline
-  --config: string
+  # --config: string
   -Z: string
 ]
 
@@ -38,7 +38,7 @@ export extern "cargo build" [
   --bin: string
   --offline
   --bins
-  --config: string
+  # --config: string
   --example: string
   --test: string
   --tests
