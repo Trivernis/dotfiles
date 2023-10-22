@@ -136,9 +136,7 @@ $env.config = {
     always_trash: false
   }
   # settings for the cd command
-  cd: {
-    abbreviations: false # set to true to allow you to do things like cd s/o/f and nushell expand it to cd some/other/folder
-  }
+  cd: {}
   # history settings
   history: {
     max_size: 10000 # Session has to be reloaded for this to take effect
@@ -159,7 +157,7 @@ $env.config = {
     external: {
       enable: true # set to false to prevent nushell looking into $env.PATH to find more suggestions, `false` recommended for WSL users as this look up my be very slow
       max_results: 100 # setting it lower can improve completion performance at the cost of omitting some options
-      completer: $nothing # check 'carapace_completer' above to as example
+      completer: null # check 'carapace_completer' above to as example
     }
   }
   # table settings
@@ -179,14 +177,14 @@ $env.config = {
 
   hooks: {
     pre_prompt: [{||
-      $nothing  # replace with source code to run before the prompt is shown
+      null  # replace with source code to run before the prompt is shown
     }]
     pre_execution: [{||
-      $nothing  # replace with source code to run before the repl input is run
+      null  # replace with source code to run before the repl input is run
     }]
     env_change: {
       PWD: [{|before, after|
-        $nothing  # replace with source code to run if the PWD environment is different since the last repl input
+        null  # replace with source code to run if the PWD environment is different since the last repl input
       }]
     }
   }
@@ -424,9 +422,6 @@ source ~/.config/nushell/starship.nu
 
 # aliases
 source ~/.config/nushell/aliases.nu
-
-# zoxide
-source ~/.config/nushell/zoxide.nu
 
 # motd
 source ~/.config/nushell/motd.nu
