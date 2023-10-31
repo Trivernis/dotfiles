@@ -1,0 +1,8 @@
+modal = true
+
+[[verbs]]
+invocation = "open"
+key = "enter"
+external = "nu ~/.local/share/scripts/ide.nu open-file '{file}'"
+apply_to = "file"
+leave_broot = false

@@ -21,7 +21,7 @@
 	c = commit -s
 	commit = commit -s
 [core]
-	editor = hx
+	editor = helix
 	pager = delta
 
 [interactive]

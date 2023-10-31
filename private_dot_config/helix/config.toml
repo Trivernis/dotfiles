@@ -1,5 +1,5 @@
 theme = "dracula-purple"
-icons = "nerdfonts"
+# icons = "nerdfonts"
 
 [editor]
 rulers = [120]
@@ -15,7 +15,7 @@ select = "underline"
 
 
 [editor.statusline]
-left = ["mode", "spinner", "spacer", "file-type-icon", "file-name"]
+left = ["mode", "spinner", "spacer", "file-name"]
 center = []
 right = ["diagnostics", "selections", "position", "position-percentage", "separator", "file-encoding", "file-line-ending", "file-type", "separator", "spacer", "version-control", "spacer"]
 separator = " │"
