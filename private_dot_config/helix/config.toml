@@ -3,7 +3,7 @@ theme = "dracula-purple"
 
 [editor]
 rulers = [120]
-shell = ["zsh", "-c"]
+shell = ["nu", "-c"]
 true-color = true
 cursorline = true
 color-modes = true
@@ -13,6 +13,8 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.soft-wrap]
+enable = true
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "file-name"]
