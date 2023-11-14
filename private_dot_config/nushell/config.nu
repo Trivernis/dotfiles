@@ -425,3 +425,9 @@ source ~/.config/nushell/aliases.nu
 
 # motd
 source ~/.config/nushell/motd.nu
+
+# fnm
+source ~/.config/nushell/fnm.nu
+
+# broot
+source ~/.config/broot/launcher/nushell/br

@@ -1,18 +1,17 @@
-[[language]]
-name = "xml"
-scope = "text.xml.basic"
-injection-regex = "xml"
-file-types = ["xml"]
-roots = []
-language-server = { command = "lemminx", args = [] }
-auto-format = false
-config = { "provideFormatter" = true }
-indent = { tab-width = 2, unit = "  " }
-
-[[grammar]]
-name = "xml"
-source = { git = "https://github.com/trivernis/tree-sitter-xml", rev = "3ef1d1a92ba91445c5b4bf50a300bb61e9c9ae8a" }
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
 
 [[language]]
-name = "rust"
+name = "typescript"
+language-servers = ["typescript-language-server", "biome"]
+formatter = { command = "biome" , args = ["format", "--stdin-file-path=file.ts"] }
 
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server", "biome"]
+formatter = { command = "biome" , args = ["format", "--stdin-file-path=file.js"] }
+
+[[language]]
+name = "javascript"
+formatter = { command = "biome" , args = ["format", "--stdin-file-path=file.json"] }
