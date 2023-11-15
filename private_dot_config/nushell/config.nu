@@ -135,8 +135,6 @@ $env.config = {
   rm: {
     always_trash: false
   }
-  # settings for the cd command
-  cd: {}
   # history settings
   history: {
     max_size: 10000 # Session has to be reloaded for this to take effect
@@ -431,3 +429,8 @@ source ~/.config/nushell/fnm.nu
 
 # broot
 source ~/.config/broot/launcher/nushell/br
+
+# utility commands
+source ~/.config/nushell/utils.nu
+
+source /home/trivernis/.config/broot/launcher/nushell/br
