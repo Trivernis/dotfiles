@@ -1,5 +1,4 @@
 theme = "dracula-purple"
-# icons = "nerdfonts"
 
 [editor]
 rulers = [120]
@@ -7,14 +6,13 @@ shell = ["nu", "-c"]
 true-color = true
 cursorline = true
 color-modes = true
+bufferline = "always"
+line-number = "relative"
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
-
-[editor.soft-wrap]
-enable = true
 
 [editor.statusline]
 left = ["mode", "spinner", "spacer", "file-name"]
@@ -29,6 +27,10 @@ display-inlay-hints = true
 [editor.indent-guides]
 render = true
 rainbow = "dim"
+
+[editor.whitespace.render]
+tab = "all"
+nbsp = "all"
 
 [keys.normal]
 C-j = "half_page_down"
