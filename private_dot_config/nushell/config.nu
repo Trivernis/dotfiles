@@ -430,7 +430,10 @@ source ~/.config/nushell/fnm.nu
 # broot
 source ~/.config/broot/launcher/nushell/br
 
+# ytdl
+source ~/.local/share/scripts/ytdl.nu
+
 # utility commands
-source ~/.config/nushell/utils.nu
+# source ~/.config/nushell/utils.nu
 
 source /home/trivernis/.config/broot/launcher/nushell/br
